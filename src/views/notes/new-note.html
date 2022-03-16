@@ -1,14 +1,22 @@
-<div class="card">
-  <hr class="my-3">
-  <form class="form-new-card">
-    <div class="form-group">
-      <label for="exampleFormControlInput1">Title</label>
-      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Name-new-note">
+<div class="col-md-4 mx-auto">
+  <div class="card">
+    <div class="card-header">
+      <h3 style="text-align: center;">New Note</h3>
     </div>
-    <div class="form-group">
-      <label for="exampleFormControlTextarea1">Example textarea</label>
-      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    <div class="card-body">
+      <form action="/notes/new-note" method="POST">
+        <div class="form-group m-2">
+          <input type="text" name="title" class="form-control" placeholder="TItle">
+        </div>
+        <div class="form-group m-2">
+          <textarea name="description" class="form-control" placeholder="Description"></textarea>
+        </div>
+        <div class="form-group m-2">
+          <button class="btn btn-primary btn-block"type="submit">
+            Save
+          </button>
+        </div>
+      </form>
     </div>
-  </form>
-  <hr class="my-3">
+  </div>
 </div>
